@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.summary = 'An XMPP Framework in Objective-C for the Mac / iOS development community.'
   s.homepage = 'https://github.com/robbiehanson/XMPPFramework'
   s.author = { 'Robbie Hanson' => 'robbiehanson@deusty.com' }
-  s.source = { :git => 'https://github.com/robbiehanson/XMPPFramework.git', :tag => '3.6.4' }
+  s.source = { :git => 'https://github.com/magnetsystems/XMPPFramework.git', :tag => '3.6.5' }
   s.resources = [ '**/*.{xcdatamodel,xcdatamodeld}']
 
   s.description = 'XMPPFramework provides a core implementation of RFC-3920 (the xmpp standard), along with
@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
   END
 
   s.subspec 'Core' do |core|
-    core.source_files = ['XMPPFramework.h', 'Core/**/*.{h,m}','Vendor/libidn/*.h']
+    core.source_files = ['XMPPFramework.h', 'Core/**/*.{h,m}','Vendor/libidn/*.h', 'Authentication/**/*.{h,m}', 'Categories/**/*.{h,m}', 'Utilities/**/*.{h,m}', 'Vendor/KissXML/**/*.{h,m}']
     core.vendored_libraries = 'Vendor/libidn/libidn.a'
     core.libraries = 'xml2','resolv'
     core.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2 $(SDKROOT)/usr/include/libresolv',
@@ -50,25 +50,25 @@ Pod::Spec.new do |s|
       core.dependency 'CocoaAsyncSocket','~>7.4.1'
     end
 
-    s.subspec 'Authentication' do |ss|
-      ss.source_files =  'Authentication/**/*.{h,m}'
-      ss.dependency 'XMPPFramework/Core'
-    end
-
-    s.subspec 'Categories' do |ss|
-      ss.source_files =  'Categories/**/*.{h,m}'
-      ss.dependency 'XMPPFramework/Core'
-    end
-
-    s.subspec 'Utilities' do |ss|
-      ss.source_files =  'Utilities/**/*.{h,m}'
-      ss.dependency 'XMPPFramework/Core'
-    end
-
-    s.subspec 'KissXML' do |ss|
-      ss.source_files = 'Vendor/KissXML/**/*.{h,m}'
-      ss.dependency 'XMPPFramework/Core'
-    end
+    # s.subspec 'Authentication' do |ss|
+    #   ss.source_files =  'Authentication/**/*.{h,m}'
+    #   ss.dependency 'XMPPFramework/Core'
+    # end
+    #
+    # s.subspec 'Categories' do |ss|
+    #   ss.source_files =  'Categories/**/*.{h,m}'
+    #   ss.dependency 'XMPPFramework/Core'
+    # end
+    #
+    # s.subspec 'Utilities' do |ss|
+    #   ss.source_files =  'Utilities/**/*.{h,m}'
+    #   ss.dependency 'XMPPFramework/Core'
+    # end
+    #
+    # s.subspec 'KissXML' do |ss|
+    #   ss.source_files = 'Vendor/KissXML/**/*.{h,m}'
+    #   # ss.dependency 'XMPPFramework/Core'
+    # end
 
     def s.xmpp_extension(name)
       subspec name do |ss|
@@ -80,9 +80,9 @@ Pod::Spec.new do |s|
     end
 
     # s.xmpp_extension 'BandwidthMonitor'
-    # s.xmpp_extension 'CoreDataStorage' do |cds|
-    #   cds.framework = 'CoreData'
-    # end
+    s.xmpp_extension 'CoreDataStorage' do |cds|
+      cds.framework = 'CoreData'
+    end
     # s.xmpp_extension 'GoogleSharedStatus'
     # s.xmpp_extension 'ProcessOne'
     # s.xmpp_extension 'Reconnect' do |r|
