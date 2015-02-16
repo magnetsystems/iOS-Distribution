@@ -14,10 +14,12 @@ Pod::Spec.new do |s|
   s.public_header_files = "MMX.framework/Headers/*.h"
   s.vendored_frameworks = 'MMX.framework'
   
+  s.resource       =  'MMX.bundle'
   s.frameworks     =  'Foundation', 'UIKit'
   s.xcconfig       =  { 'OTHER_LDFLAGS' => '-ObjC' } 
   s.dependency     'XMPPFramework', '~> 3.6.5'
   s.dependency     'Mantle', '~> 1.5'
+  s.dependency     'MDMCoreData', '~> 1.4.0'
 
 end
 
