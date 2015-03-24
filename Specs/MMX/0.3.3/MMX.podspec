@@ -7,9 +7,7 @@ Pod::Spec.new do |s|
   s.author             =  { 'Magnet Systems, Inc.' => 'support@magnet.com' }
   s.source             =  { :git => 'https://bitbucket.org/magneteng/temp-mmx-ios-sdk.git', :branch=> 'develop', :submodules => true }
 
-  #s.platform = :ios, '7.0'
-  s.ios.deployment_target = '7.0'
-  s.osx.deployment_target = '10.8'
+  s.platform = :ios, '7.0'
   s.requires_arc = true
   
   s.preserve_paths = 'MMX.framework'
