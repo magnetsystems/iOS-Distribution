@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name               =  'MMX'
-  s.version            =  '0.3.3'
+  s.version            =  '0.3.4'
   s.license            =  { :type => 'Commercial', :text => 'See http://www.magnet.com/resources/tos.html' }
   s.summary            =  'iOS framework for developing apps using the Magnet MMX platform.'
   s.homepage           =  'http://magnet.com'
