@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.summary            =  'iOS framework for developing apps using the Magnet MMX platform.'
   s.homepage           =  'http://magnet.com'
   s.author             =  { 'Magnet Systems, Inc.' => 'support@magnet.com' }
-  s.source             =  { :git => 'https://bitbucket.org/magneteng/temp-mmx-ios-sdk.git', :tag=> 'tag-release-0.3.9', :submodules => true}
+  s.source             =  { :git => 'https://bitbucket.org/magneteng/temp-mmx-ios-sdk.git', :branch=> 'develop', :submodules => true }
 
   s.platform = :ios, '7.0'
   s.requires_arc = true
