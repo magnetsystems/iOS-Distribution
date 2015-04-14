@@ -19,6 +19,7 @@ Pod::Spec.new do |s|
   s.xcconfig       =  { 'OTHER_LDFLAGS' => '-ObjC' } 
   s.dependency     'XMPPFramework', '~> 3.6.5'
   s.dependency     'MDMCoreData', '~> 1.4.0'
+  s.dependency     'Mantle', '~>1.4'
 
 end
 
