@@ -5,13 +5,16 @@ Pod::Spec.new do |s|
   s.summary            =  'iOS framework for developing apps using the Magnet MMX platform.'
   s.homepage           =  'http://magnet.com'
   s.author             =  { 'Magnet Systems, Inc.' => 'support@magnet.com' }
-  s.source             =  { :git => 'https://bitbucket.org/magneteng/ios-mmx-sdk.git', :branch=> 'reorg', :submodules => true}
+  s.source             =  { :git => 'https://bitbucket.org/magneteng/temp-mmx-ios-sdk.git', :branch=> 'develop', :submodules => true}
 
   s.platform = :ios, '7.0'
   s.requires_arc = true
   
-  s.source_files = "Source/**/*.{h,m,xcdatamodeld}"
+  s.preserve_paths = 'MMX.framework'
+  s.public_header_files = "MMX.framework/Headers/*.h"
+  s.vendored_frameworks = 'MMX.framework'
   
+  s.resource       =  'MMX.bundle'
   s.frameworks     =  'Foundation', 'UIKit'
   s.xcconfig       =  { 'OTHER_LDFLAGS' => '-ObjC' } 
   s.dependency     'XMPPFramework', '~> 3.6.5'
