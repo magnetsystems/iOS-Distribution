@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.resources    = 'MMX/Source/CoreData/MMX.xcdatamodeld'
 
   s.frameworks     =  'Foundation', 'UIKit'
-  s.xcconfig       =  { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2, 'OTHER_LDFLAGS' => '-ObjC' } 
+  s.xcconfig       =  { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2', 'OTHER_LDFLAGS' => '-ObjC' } 
   s.dependency     'XMPPFramework', '~> 3.6.5'
   s.dependency     'MDMCoreData', '~> 1.4.0'
   s.dependency     'Mantle', '~>1.4'
