@@ -10,11 +10,8 @@ Pod::Spec.new do |s|
   s.platform = :ios, '7.0'
   s.requires_arc = true
   
-  s.preserve_paths = 'MMX.framework'
-  s.public_header_files = "MMX.framework/Headers/*.h"
-  s.vendored_frameworks = 'MMX.framework'
+  s.source_files = "Source/**/*.{h,m,xcdatamodeld}"
   
-  s.resource       =  'MMX.bundle'
   s.frameworks     =  'Foundation', 'UIKit'
   s.xcconfig       =  { 'OTHER_LDFLAGS' => '-ObjC' } 
   s.dependency     'XMPPFramework', '~> 3.6.5'
