@@ -9,7 +9,6 @@ Pod::Spec.new do |s|
   s.platform = :ios, '7.0'
   s.requires_arc = true
   
-  s.preserve_paths = ['MMX/Source/**/*.{h,m}','MMX/Source/CoreData/MMX.xcdatamodeld']
   s.source_files = 'MMX/Source/**/*.{h,m}'
   s.resources    = 'MMX/Source/CoreData/MMX.xcdatamodeld'
 
