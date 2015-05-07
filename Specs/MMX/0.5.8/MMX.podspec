@@ -9,8 +9,8 @@ Pod::Spec.new do |s|
   s.platform = :ios, '7.0'
   s.requires_arc = true
   
-  s.source_files = 'MMX/Source/**/*.{h,m}'
-  s.resources    = 'MMX/Source/CoreData/MMX.xcdatamodeld'
+  s.source_files = 'Source/**/*.{h,m}'
+  s.resources    = 'Source/CoreData/MMX.xcdatamodeld'
 
   s.frameworks     =  'Foundation', 'UIKit'
   s.xcconfig       =  { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2', 'OTHER_LDFLAGS' => '-ObjC' } 
