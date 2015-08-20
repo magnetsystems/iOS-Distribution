@@ -18,8 +18,8 @@ Pod::Spec.new do |s|
   # s.resource       =  'Bundles/MagnetMobileServer.bundle'
   s.frameworks     =  'Foundation', 'UIKit', 'CFNetwork' , 'Security'
   s.xcconfig       =  { 'OTHER_LDFLAGS' => '-ObjC -all_load' }
-  s.dependency 'AFNetworking/NSURLConnection', '~> 2.5'
-  s.dependency 'AFNetworking/NSURLSession', '~> 2.5'
+  s.dependency 'AFNetworking/NSURLConnection', '~> 2.5.0'
+  s.dependency 'AFNetworking/NSURLSession', '~> 2.5.0'
   s.dependency 'CocoaLumberjack', '~> 2.0.1'
   s.dependency 'Mantle', '~> 1.5'
   s.dependency 'libextobjc', '~> 0.4'
