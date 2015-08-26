@@ -12,8 +12,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.requires_arc = true
 
-  s.source_files = 'MagnetMobileServer/*.{h,m}',
-                   'MagnetMobileServer/Internal/**/*.{h,m}'
+  s.source_files = 'MagnetMobileServer/*.{h,m}', 'MagnetMobileServer/Internal/**/*.{h,m}'
   s.public_header_files = 'MagnetMobileServer/*.h'
 
   # s.resource       =  'Bundles/MagnetMobileServer.bundle'
