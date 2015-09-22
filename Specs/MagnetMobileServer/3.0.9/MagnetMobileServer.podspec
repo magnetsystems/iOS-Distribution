@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage           =  'https://www.magnet.com'
   s.author             =  { 'Magnet Systems, Inc.' => 'support@magnet.com' }
   #s.source             =  { :git => 'https://github.com/magnetsystems/blowfish-ios-sdk.git', :tag => s.version }
-  s.source             =  { :git => 'https://github.com/magnetsystems/blowfish-ios-sdk.git', :branch => 'develop'}
+  s.source             =  { :git => 'https://github.com/magnetsystems/blowfish-ios-sdk.git', :branch => 'disrupt'}
 
   s.platform = :ios
   s.ios.deployment_target = '8.0'
@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   s.dependency 'Mantle', '~> 1.5'
   s.dependency 'libextobjc', '~> 0.4'
   s.dependency 'MagnetMobileCore', '~> 1.0'
-  s.dependency 'JSQCoreDataKit', '~> 1.1'
+  # s.dependency 'JSQCoreDataKit', '~> 1.1'
 
   s.libraries      = "icucore"
 
