@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
 
   s.dependency 'AFNetworking/NSURLConnection', '2.5.4'
   s.dependency 'AFNetworking/NSURLSession', '2.5.4'
-  s.dependency 'CocoaLumberjack', '~> 2.0.1'
+  s.dependency 'CocoaLumberjack', '~> 2.0.2'
   s.dependency 'Mantle', '~> 1.5'
   s.dependency 'libextobjc', '~> 0.4'
   s.dependency 'MagnetMobileCore', '~> 1.0'
