@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name               =  'MagnetMobileServer'
-  s.version            =  '3.0.9'
+  s.version            =  '3.0'
   s.license            =  { :type => 'Commercial', :text => 'See http://www.magnet.com/resources/tos.html' }
   s.summary            =  'Magnet\'s platform provides the best framework to deliver enterprise-grade mobile apps.'
   s.homepage           =  'https://www.magnet.com'
