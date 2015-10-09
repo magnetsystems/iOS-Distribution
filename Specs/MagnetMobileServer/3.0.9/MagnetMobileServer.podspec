@@ -26,7 +26,6 @@ Pod::Spec.new do |s|
   s.dependency 'CocoaLumberjack', '~> 2.0.2'
   s.dependency 'Mantle', '~> 1.5'
   s.dependency 'libextobjc', '~> 0.4'
-  s.dependency 'MagnetMobileCore', '~> 1.0'
   s.dependency 'AFOAuth2Manager', '~> 2.2.1'
 
   s.libraries      = "icucore"
