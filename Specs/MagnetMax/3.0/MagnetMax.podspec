@@ -9,6 +9,8 @@ Pod::Spec.new do |s|
   s.source_files = 'MagnetMax/**/*.{swift,h,m}'
   s.requires_arc = true
 
+  s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+  
   s.dependency 'MMX', '~> 2.0'
   s.dependency 'MagnetMobileServer', '~> 3.0'
 
