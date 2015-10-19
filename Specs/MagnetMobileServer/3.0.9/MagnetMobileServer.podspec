@@ -21,9 +21,9 @@ Pod::Spec.new do |s|
   s.frameworks     =  'Foundation', 'UIKit', 'CFNetwork' , 'Security'
   s.xcconfig       =  { 'OTHER_LDFLAGS' => '-ObjC -all_load' }
 
-  s.dependency 'AFNetworking/NSURLConnection', '2.5.4'
-  s.dependency 'AFNetworking/NSURLSession', '2.5.4'
-  s.dependency 'CocoaLumberjack', '~> 2.0.2'
+  s.dependency 'AFNetworking/NSURLConnection', '2.6.1'
+  s.dependency 'AFNetworking/NSURLSession', '2.6.1'
+  s.dependency 'CocoaLumberjack', '~> 2.0.3'
   s.dependency 'Mantle', '~> 1.5'
   s.dependency 'libextobjc', '~> 0.4'
   s.dependency 'AFOAuth2Manager', '~> 2.2.1'
