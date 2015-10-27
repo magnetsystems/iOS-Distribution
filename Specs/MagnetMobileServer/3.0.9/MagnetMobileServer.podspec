@@ -24,8 +24,8 @@ Pod::Spec.new do |s|
   s.dependency 'AFNetworking/NSURLConnection', '2.6.1'
   s.dependency 'AFNetworking/NSURLSession', '2.6.1'
   s.dependency 'CocoaLumberjack', '~> 2.0.3'
-  # s.dependency 'Mantle', '~> 1.5'
-  s.dependency 'Mantle', '~> 2.0'
+  # s.dependency 'Mantle', '~> 2.0'
+  s.dependency 'Mantle', '2.0.6'
   s.dependency 'libextobjc', '~> 0.4'
   s.dependency 'AFOAuth2Manager', '~> 2.2.1'
 
