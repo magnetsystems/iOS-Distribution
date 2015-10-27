@@ -19,7 +19,7 @@
     "watchos": "2.0"
   },
   "requires_arc": true,
-  "prepare_command": "find . -regex 'Pods\\/Mantle\\/Mantle\\/Mantle\\.h' -print0 | xargs -0 sed -i '' 's/\\(<\\)Mantle\\/\\(.*\\)\\(>\\)/\\\"\\2\\\"/'",
+  "prepare_command": "find . -regex 'Mantle\\/Mantle\\/Mantle\\.h' -print0 | xargs -0 sed -i '' 's/\\(<\\)Mantle\\/\\(.*\\)\\(>\\)/\\\"\\2\\\"/'",
   "subspecs": [
     {
       "name": "extobjc",
