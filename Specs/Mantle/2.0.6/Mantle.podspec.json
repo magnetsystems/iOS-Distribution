@@ -19,7 +19,7 @@
     "watchos": "2.0"
   },
   "requires_arc": true,
-  "prepare_command": "pwd > /tmp/pwd && find . -regex '.*/Mantle\/Mantle\\.h' -print0 | xargs -0 sed -i '' 's/\\(<\\)Mantle\\/\\(.*\\)\\(>\\)/\\\"\\2\\\"/'",
+  "prepare_command": "find . -regex '.*/Mantle\/Mantle\\.h' -print0 | xargs -0 ruby -pi.bak -e \"sub('#import <Mantle/', '//#import <Mantle/')\"",
   "subspecs": [
     {
       "name": "extobjc",
