@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.summary            =  'The first fully realized open mobile architecture created specifically for developing and deploying mobile-first enterprise applications.'
   s.homepage           =  'https://www.magnet.com/magnet-max/'
   s.author             =  { 'Magnet Systems, Inc.' => 'info@magnet.com' }
-  s.source   = { :git => 'https://github.com/magnetsystems/blowfish-ios-sdk.git', :branch => 'goodbye-magnetmobileserver' }
+  s.source   = { :git => 'https://github.com/magnetsystems/blowfish-ios-sdk.git', :branch => 'develop' }
 
   s.platform = :ios
   s.ios.deployment_target = '8.0'
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 
   s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2', 'ENABLE_BITCODE'=>'NO' }
 
-  s.dependency 'MMX', '~> 2.0'
+  s.dependency 'MMX', '~> 2.0.0'
   s.dependency 'MagnetMaxCore', '~> 2.0.0'
 
   s.ios.deployment_target = '8.0'
