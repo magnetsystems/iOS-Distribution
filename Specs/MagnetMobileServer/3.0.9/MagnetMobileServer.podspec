@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage           =  'https://www.magnet.com'
   s.author             =  { 'Magnet Systems, Inc.' => 'support@magnet.com' }
   #s.source             =  { :git => 'https://github.com/magnetsystems/blowfish-ios-sdk.git', :tag => s.version }
-  s.source             =  { :git => 'https://github.com/magnetsystems/blowfish-ios-sdk.git', :branch => 'develop'}
+  s.source             =  { :git => 'https://github.com/magnetsystems/blowfish-ios-sdk.git', :commit => 'c8af9acaddb6e4f07e6dd7d29d0475ff0003fcef'}
 
   s.platform = :ios
   s.ios.deployment_target = '8.0'
