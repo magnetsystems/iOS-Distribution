@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.source_files = 'MagnetMax/*.{swift,h,m}'
   s.public_header_files = 'MagnetMax/*.h'
 
-  s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2', 'ENABLE_BITCODE'=>'NO' }
+  s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2', 'ENABLE_BITCODE'=>'NO', 'FRAMEWORK_SEARCH_PATHS' => '$(inherited) $(SRCROOT)' }
 
   s.dependency 'MMX', '~> 2.0.0'
   s.dependency 'MagnetMaxCore', '~> 2.0.0'
