@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2', 'ENABLE_BITCODE'=>'NO', 'FRAMEWORK_SEARCH_PATHS' => '$(inherited) $(SRCROOT)' }
 
-  s.dependency 'MMX', '~> 2.0'
+  s.dependency 'MMX', '~> 2.1'
   s.dependency 'MagnetMaxCore', '~> 2.1'
 
   s.ios.deployment_target = '8.0'
