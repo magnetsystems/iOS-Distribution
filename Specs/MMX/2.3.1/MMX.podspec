@@ -19,14 +19,6 @@ Pod::Spec.new do |s|
   s.dependency     'CocoaLumberjack', '~> 2.2'
   s.dependency     'CocoaAsyncSocket', '7.4.1'
 
-
-  s.subspec 'Public' do |public_subspec|
-  public_subspec.source_files = 'Source/public/**/*.h','Source/PushMessage/**/*.{h,swift}'
-  public_subspec.dependency 'MMX/Source'
-  end
-
-   s.subspec 'Source' do |private_subspec|
-  private_subspec.source_files = 'Source/**/*.{h,m,swift}'
-  end
+  s.preserve_paths = "Source/public/**/*", "Source/PushMessage/**/*"
 
 end
