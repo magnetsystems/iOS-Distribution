@@ -9,8 +9,6 @@ Pod::Spec.new do |s|
   s.source             =  { :git => 'https://github.com/magnetsystems/message-ios.git', :branch => "new_channel_API_updates" }
   s.platform = :ios, '8.0'
   s.requires_arc = true
-
-  s.source_files = 'Source/public/**/*.h','Source/PushMessage/**/*.{h,swift}'
   s.resources    = 'Source/CoreData/MMX.xcdatamodeld'
 
   s.frameworks     =  'Foundation', 'UIKit'
@@ -21,7 +19,13 @@ Pod::Spec.new do |s|
   s.dependency     'CocoaLumberjack', '~> 2.2'
   s.dependency     'CocoaAsyncSocket', '7.4.1'
 
-  s.subspec 'Source' do |private_subspec|
+
+  s.subspec 'Public' do |public_subspec|
+  public_subspec.source_files = 'Source/public/**/*.h','Source/PushMessage/**/*.{h,swift}'
+  public_subspec.dependency 'MMX/Source'
+  end
+
+   s.subspec 'Source' do |private_subspec|
   private_subspec.source_files = 'Source/**/*.{h,m,swift}'
   end
 
