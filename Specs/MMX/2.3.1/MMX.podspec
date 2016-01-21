@@ -21,7 +21,8 @@ Pod::Spec.new do |s|
   s.dependency     'CocoaLumberjack', '~> 2.2'
   s.dependency     'CocoaAsyncSocket', '7.4.1'
 
-
- #test
+  s.subspec 'Source' do |private_subspec|
+  private_subspec.source_files = 'Source/**/*.{h,m,swift}'
+  end
 
 end
