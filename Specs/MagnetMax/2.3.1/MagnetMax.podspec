@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage           =  'https://www.magnet.com/magnet-max/'
   s.author             =  { 'Magnet Systems, Inc.' => 'info@magnet.com' }
   # s.source             =  { :git => 'https://github.com/magnetsystems/max-ios.git', :tag => "tag-release-#{s.version}" }
-  s.source             =  { :git => 'https://github.com/magnetsystems/max-ios.git', :branch => "develop" }
+  s.source             =  { :git => 'https://github.com/magnetsystems/max-ios.git', :branch => "Remember_me_implementation" }
 
   s.platform = :ios
   s.ios.deployment_target = '8.0'
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2', 'ENABLE_BITCODE'=>'NO', 'FRAMEWORK_SEARCH_PATHS' => '$(inherited) $(SRCROOT)' }
 
   s.dependency 'MMX', '~> 2.3'
-  s.dependency 'MagnetMaxCore', '~> 2.3.1'
+  s.dependency 'MagnetMaxCore', '~> 2.3'
 
   s.ios.deployment_target = '8.0'
 end
