@@ -8,8 +8,7 @@ Pod::Spec.new do |s|
   s.summary = 'An XMPP Framework in Objective-C for the Mac / iOS development community.'
   s.homepage = 'https://github.com/robbiehanson/XMPPFramework'
   s.author = { 'Robbie Hanson' => 'robbiehanson@deusty.com' }
-  s.source = { :git => 'https://github.com/magnetsystems/XMPPFramework.git', :tag => '3.6.13'}
-  # s.source = { :git => 'https://github.com/magnetsystems/XMPPFramework.git', :tag => "#{s.version}"}
+  s.source = { :git => 'https://github.com/magnetsystems/XMPPFramework.git', :tag => "#{s.version}"}
   s.resources = [ '**/*.{xcdatamodel,xcdatamodeld}']
   s.module_map = 'modulemappath/module.modulemap'
 
