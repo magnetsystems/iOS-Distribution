@@ -7,7 +7,8 @@ Pod::Spec.new do |s|
   s.homepage           =  'https://www.magnet.com/developer/magnet-message/'
   s.author             =  { 'Magnet Systems, Inc.' => 'support@magnet.com' }
   # s.source             =  { :git => 'git@github.com:magnetsystems/message-ios-3.0.git', :tag => "tag-release-#{s.version}" }
-  s.source             =  { :git => 'git@github.com:magnetsystems/message-ios-3.0.git', :branch => "develop" }
+  #s.source             =  { :git => 'git@github.com:magnetsystems/message-ios-3.0.git', :branch => "develop" }
+  s.source             =  { :git => 'git@github.com:magnetsystems/message-ios-3.0.git', :tag => "tag-develop-#{s.version}" }
 
   s.platform = :ios, '8.0'
   s.requires_arc = true
