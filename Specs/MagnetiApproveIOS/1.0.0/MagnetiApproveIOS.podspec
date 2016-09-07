@@ -19,5 +19,19 @@ Pod::Spec.new do |s|
   s.frameworks     =  'Foundation', 'UIKit'
   s.xcconfig       =  { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2', 'OTHER_LDFLAGS' => '-ObjC', 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES','ENABLE_BITCODE' => 'NO'}
 
-    s.dependency 'MagnetMax', '~> 3.0.0'
+  s.subspec 'Private' do |ss|
+    ss.source_files = ['MagnetiApproveIOS/Private/**/*.{h,m,swift}']
+    ss.dependency 'MagnetiApproveIOS/PublicCommon', '~> 1.0.0'
+  end
+
+  s.subspec 'PublicCommon' do |ss|
+    ss.source_files = ['MagnetiApproveIOS/Common/**/*.{h,m,swift}']
+    ss.dependency 'MagnetMax', '~> 3.0.0'
+
+  end
+
+  s.subspec 'Public' do |ss|
+    ss.source_files = 'MagnetiApproveIOS/Public/**/*.{h,m,swift}'
+    ss.dependency 'MagnetiApproveIOS/Private', '~> 1.0.0'
+  end
 end
