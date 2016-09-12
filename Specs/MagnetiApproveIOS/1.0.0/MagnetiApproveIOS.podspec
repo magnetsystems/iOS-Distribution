@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   #s.resources = ['MagnetiApproveIOS/**/*.{xib,storyboard,bundle,png,xcdatamodeld}']
-  s.source_files = 'MagnetiApproveIOS/**/*.{h,m,swift}'
+  #s.source_files = 'MagnetiApproveIOS/**/*.{h,m,swift}'
 
   s.frameworks     =  'Foundation', 'UIKit'
   s.xcconfig       =  { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2', 'OTHER_LDFLAGS' => '-ObjC', 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES','ENABLE_BITCODE' => 'NO'}
