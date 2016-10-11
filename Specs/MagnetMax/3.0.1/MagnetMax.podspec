@@ -5,8 +5,8 @@ Pod::Spec.new do |s|
   s.summary            =  'The first fully realized open mobile architecture created specifically for developing and deploying mobile-first enterprise applications.'
   s.homepage           =  'https://www.magnet.com/magnet-max/'
   s.author             =  { 'Magnet Systems, Inc.' => 'info@magnet.com' }
-  #s.source             =  { :git => 'git@github.com:magnetsystems/max-ios-3.0.git', :tag => "tag-release-#{s.version}" }
-  s.source             =  { :git => 'git@github.com:magnetsystems/max-ios-3.0.git', :branch => "develop" }
+  #s.source             =  { :git => 'git@github.com:magnetsystems/max-ios-3.0.git', :tag => "tag-develop-#{s.version}" }
+  s.source             =  { :git => 'git@github.com:magnetsystems/max-ios-3.0.git', :branch => "develop_3.0.0" }
 
   s.platform = :ios
   s.ios.deployment_target = '8.0'
@@ -14,13 +14,12 @@ Pod::Spec.new do |s|
 
   s.source_files = 'MagnetMax/*.{swift,h,m}'
   s.public_header_files = 'MagnetMax/*.h'
-
-  s.xcconfig = {  }
+  
   s.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2', 'ENABLE_BITCODE'=>'NO', 'FRAMEWORK_SEARCH_PATHS' => '$(inherited) $(SRCROOT)', 'SWIFT_VERSION' => '2.3' }
   s.user_target_xcconfig = { 'SWIFT_VERSION' => '2.3' }
-  
-  s.dependency 'MMX', '~> 3.0.1'
-  s.dependency 'MagnetMaxCore', '~> 3.0.1'
+
+  s.dependency 'MMX', '3.0.1'
+  s.dependency 'MagnetMaxCore', '3.0.1'
 
   s.ios.deployment_target = '8.0'
 end
