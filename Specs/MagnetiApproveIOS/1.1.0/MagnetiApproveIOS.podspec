@@ -20,6 +20,7 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2', 'OTHER_LDFLAGS' => '-ObjC', 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES','ENABLE_BITCODE' => 'NO', 'SWIFT_VERSION' => '2.3' }
   s.user_target_xcconfig = { 'SWIFT_VERSION' => '2.3' }
 
-  s.source_files = ['MagnetiApproveIOS/Private/**/*.{h,m,swift}', 'MagnetiApproveIOS/Common/**/*.{h,m,swift}']
+  s.source_files = ['MagnetiApproveIOS/Private/**/*.{h,m,swift}', 'MagnetiApproveIOS/Public/**/*.{h,m,swift}', 'MagnetiApproveIOS/Common/**/*.{h,m,swift}']
   s.dependency 'MagnetMax', '~> 3.1.0'
+  
 end
