@@ -5,9 +5,7 @@ Pod::Spec.new do |s|
   s.summary            =  'The core of Magnet Max.'
   s.homepage           =  'https://www.magnet.com/magnet-max/'
   s.author             =  { 'Magnet Systems, Inc.' => 'info@magnet.com' }
-  #s.source             =  { :git => 'git@github.com:magnetsystems/max-ios-3.0.git', :tag => "tag-release-#{s.version}" }
-  s.source             =  { :git => 'https://github.com/magnetsystems/max-ios-3.0.git', :branch => "develop" }
-
+  s.source             =  { :git => 'git@github.com:magnetsystems/max-ios-3.0.git', :tag => "tag-develop-#{s.version}" }
   s.platform = :ios
   s.ios.deployment_target = '8.0'
   s.requires_arc = true
