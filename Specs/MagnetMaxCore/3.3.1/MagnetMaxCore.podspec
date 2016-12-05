@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage           =  'https://www.magnet.com/magnet-max/'
   s.author             =  { 'Magnet Systems, Inc.' => 'info@magnet.com' }
   #s.source             =  { :git => 'git@github.com:magnetsystems/max-ios-3.0.git', :tag => "tag-release-#{s.version}" }
-  s.source             =  { :git => 'https://github.com/magnetsystems/max-ios-3.0.git', :branch => "develop" }
+  s.source             =  { :git => 'https://github.com/magnetsystems/max-ios-3.0.git', :branch => "develop-3.3.0" }
 
   s.platform = :ios
   s.ios.deployment_target = '8.0'
@@ -30,6 +30,7 @@ Pod::Spec.new do |s|
   s.dependency 'CocoaLumberjack', '~> 2.2'
   s.dependency 'Mantle', '~> 3.0'
   s.dependency 'AFOAuth2Manager', '2.2.1'
+  s.dependency 'SAMKeychain', '~> 1.5.2'
 
   s.libraries      = "icucore"
 
