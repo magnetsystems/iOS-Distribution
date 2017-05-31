@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2', 'OTHER_LDFLAGS' => '-ObjC', 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES','ENABLE_BITCODE' => 'NO', 'SWIFT_VERSION' => '3.0' }
 
   s.dependency     'MMXXMPPFramework', '~> 3.6'
-  s.dependency     'MagnetMaxCore', '~> 3.0.5'
+  s.dependency     'MagnetMaxCore', '3.0.5'
   s.dependency     'CocoaLumberjack', '~> 2.2'
   s.dependency     'CocoaAsyncSocket', '7.4.1'
 
