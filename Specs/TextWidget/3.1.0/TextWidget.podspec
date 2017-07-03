@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.description        =  'TextWidget'
   s.homepage           =  'https://www.magnet.com/developer/magnet-message/'
   s.author             =  { 'Magnet Systems, Inc.' => 'support@magnet.com' }
-  s.source             =  { :git => 'https://github.com/magnetsystems/chatkit-widets.git', :branch => "release-3.1.0" }
+  s.source             =  { :git => 'https://github.com/magnetsystems/chatkit-widgets.git', :branch => "release-3.1.0" }
   s.platform = :ios
   s.ios.deployment_target = '8.0'
   s.requires_arc = true
