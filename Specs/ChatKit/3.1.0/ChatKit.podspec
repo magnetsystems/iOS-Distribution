@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 
   s.source_files = ['ChatKit/source/src/**/*.{h,m,swift}','ChatKit/source/Views/**/*.{h,m,swift}', 'ChatKit/source/ChatKit/**/*.{h,m,swift}']
 
-  s.dependency 'MagnetMax', '3.1.0'
+  s.dependency 'MagnetMax', '3.0.6'
   s.dependency 'NYTPhotoViewer' , '~> 1.1.0'
   s.dependency 'DZVideoPlayerViewController'
 end
