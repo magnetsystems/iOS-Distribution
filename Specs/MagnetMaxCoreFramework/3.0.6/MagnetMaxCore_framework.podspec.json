@@ -1,0 +1,51 @@
+{
+  "name": "MagnetMaxCore_framework",
+  "version": "3.0.6",
+  "license": {
+    "type": "Apache 2.0"
+  },
+  "summary": "The framework core of Magnet Max",
+  "homepage": "https://www.magnet.com/",
+  "authors": {
+    "Magnet Systems, Inc.": "info@magnet.com"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "requires_arc": true,
+  "source": {
+    "git": "https://github.com/magnetsystems/MagnetMaxCoreFramework"
+  },
+  "source_files": "Source/**",
+  "frameworks": [
+    "Foundation",
+    "UIKit",
+    "CFNetwork",
+    "Security",
+    "CoreData",
+    "SystemConfiguration"
+  ],
+  "pod_target_xcconfig": {
+    "SWIFT_VERSION": "3.0"
+  },
+  "dependencies": {
+    "AFNetworking/NSURLConnection": [
+      "2.6.1"
+    ],
+    "AFNetworking/NSURLSession": [
+      "2.6.1"
+    ],
+    "CocoaLumberjack": [
+      "~> 2.2"
+    ],
+    "Mantle": [
+      "~> 3.0"
+    ],
+    "AFOAuth2Manager": [
+      "2.2.1"
+    ],
+    "SAMKeychain": [
+      "~> 1.5.2"
+    ]
+  }
+}
