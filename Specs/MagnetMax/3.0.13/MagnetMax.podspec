@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.source             =  { :git => 'git@github.com:magnetsystems/max-ios-3.0.git', :branch => "release-3.0.13" }
 
   s.platform = :ios
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '8.0'
   s.requires_arc = true
 
   s.source_files = 'MagnetMax/*.{swift,h,m}'
@@ -16,7 +16,8 @@ Pod::Spec.new do |s|
   
   s.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2', 'ENABLE_BITCODE'=>'NO', 'FRAMEWORK_SEARCH_PATHS' => '$(inherited) $(SRCROOT)', 'SWIFT_VERSION' => '3.0' }
 
-  s.dependency 'MMX', '3.0.13'
-  s.dependency 'MagnetMaxCore', '3.0.13'
+  s.dependency 'MMX', '~> 3.0.13'
+  s.dependency 'MagnetMaxCore', '~> 3.0.13'
 
+  s.ios.deployment_target = '8.0'
 end
