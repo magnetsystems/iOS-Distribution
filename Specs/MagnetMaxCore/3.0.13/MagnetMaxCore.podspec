@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
 
   s.dependency 'AFNetworking/NSURLConnection', '2.6.1'
   s.dependency 'AFNetworking/NSURLSession', '2.6.1'
-  s.dependency 'CocoaLumberjack', '~> 3.1'
+  s.dependency 'CocoaLumberjack', '~> 2.2'
   s.dependency 'Mantle', '~> 3.0'
   s.dependency 'AFOAuth2Manager', '2.2.1'
   s.dependency 'SAMKeychain', '~> 1.5.2'
