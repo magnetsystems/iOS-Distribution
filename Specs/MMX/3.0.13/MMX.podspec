@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.author             =  { 'Magnet Systems, Inc.' => 'support@magnet.com' }
   s.source             =  { :git => 'git@github.com:magnetsystems/message-ios-3.0.git', :branch => "release-3.0.13" }
 
-  s.platform = :ios, '9.0'
+  s.platform = :ios, '8.0'
   s.requires_arc = true
 
   s.source_files = 'Source/**/*.{h,m,swift}'
