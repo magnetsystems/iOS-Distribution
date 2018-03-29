@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.source             =  { :git => 'https://github.com/magnetsystems/max-ios-3.0.git', :branch => "release-3.0.13" }
 
   s.platform = :ios
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '8.0'
   s.requires_arc = true
 
   s.source_files = 'MagnetMax/Core/**/*.{swift,h,m}',
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
 
   s.dependency 'AFNetworking/NSURLConnection', '2.6.1'
   s.dependency 'AFNetworking/NSURLSession', '2.6.1'
-  s.dependency 'CocoaLumberjack', '~> 2.2'
+  s.dependency 'CocoaLumberjack', '~> 3.1'
   s.dependency 'Mantle', '~> 3.0'
   s.dependency 'AFOAuth2Manager', '2.2.1'
   s.dependency 'SAMKeychain', '~> 1.5.2'
